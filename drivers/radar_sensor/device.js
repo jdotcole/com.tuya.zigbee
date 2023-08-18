@@ -58,7 +58,7 @@ const getDataValue = (dpValue) => {
   }
 }
 
-class CurtainMotor extends TuyaSpecificClusterDevice {
+class RadarSensor extends TuyaSpecificClusterDevice {
   async onNodeInit({zclNode}) {
 
     zclNode.endpoints[1].clusters.tuya.on("response", value => this.updatePosition(value));
